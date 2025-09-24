@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://dckff4lhg8n08"]
+
+[ext_resource type="PackedScene" uid="uid://cji11wmcgqqj0" path="res://grid_container.tscn" id="1_3mqji"]
+[ext_resource type="Script" uid="uid://bigaish2qm2vt" path="res://MainScene.cs" id="1_x4av3"]
+[ext_resource type="Texture2D" uid="uid://18h5vuamjic6" path="res://icon.svg" id="4_uxrcv"]
+
+[node name="Square" type="Node2D"]
+scale = Vector2(1.04822, 1.06904)
+script = ExtResource("1_x4av3")
+
+[node name="GridOfMines" parent="." instance=ExtResource("1_3mqji")]
+offset_left = 1.908
+offset_top = 101.025
+offset_right = 1001.91
+offset_bottom = 701.025
+
+[node name="PreSettings" type="Window" parent="."]
+title = "Settings"
+position = Vector2i(500, 40)
+size = Vector2i(400, 200)
+
+[node name="WidthInput" type="LineEdit" parent="PreSettings"]
+offset_left = 170.0
+offset_top = 10.0
+offset_right = 238.563
+offset_bottom = 41.0
+placeholder_text = "Width"
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="HeightInput" type="LineEdit" parent="PreSettings"]
+offset_left = 170.0
+offset_top = 60.0
+offset_right = 238.563
+offset_bottom = 91.0
+placeholder_text = "Height"
+
+[node name="MineCountInput" type="LineEdit" parent="PreSettings"]
+offset_left = 170.0
+offset_top = 110.0
+offset_right = 238.563
+offset_bottom = 141.0
+placeholder_text = "Mines Count"
+max_length = 100
+
+[node name="RestartButton" type="Button" parent="."]
+offset_left = 302.417
+offset_top = 0.935419
+offset_right = 438.417
+offset_bottom = 136.935
+scale = Vector2(0.7, 0.7)
+icon = ExtResource("4_uxrcv")

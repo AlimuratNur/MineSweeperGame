@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmgcnrasflt2b"]
+
+[ext_resource type="PackedScene" uid="uid://b5oy62xnxlvrh" path="res://square.tscn" id="1_jotil"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Square" parent="." instance=ExtResource("1_jotil")]
+
+[node name="Square2" parent="." instance=ExtResource("1_jotil")]
+offset_left = 32.0
+offset_right = 64.0
+
+[node name="Square3" parent="." instance=ExtResource("1_jotil")]
+offset_left = 64.0
+offset_right = 96.0

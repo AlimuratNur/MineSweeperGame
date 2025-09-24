@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5oy62xnxlvrh"]
+
+[ext_resource type="Script" uid="uid://ck2y72uyro7cv" path="res://Square.cs" id="1_5epwn"]
+[ext_resource type="Texture2D" uid="uid://cmlemgebs3xtd" path="res://Assets/Minesweeper-pack/single-files/minesweeper_00.png" id="2_5epwn"]
+
+[node name="Square" type="Button"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(32, 32)
+layout_direction = 1
+offset_right = 32.0
+offset_bottom = 32.0
+size_flags_vertical = 8
+button_mask = 3
+alignment = 0
+expand_icon = true
+script = ExtResource("1_5epwn")
+
+[node name="SquareSprite" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+texture = ExtResource("2_5epwn")

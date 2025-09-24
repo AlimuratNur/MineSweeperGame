@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxgvn6g65uyeu"]
+
+[sub_resource type="TileSet" id="TileSet_g245i"]
+custom_data_layer_0/name = "Squares"
+custom_data_layer_0/type = 28
+
+[node name="TileMapLayer" type="TileMapLayer"]
+tile_set = SubResource("TileSet_g245i")

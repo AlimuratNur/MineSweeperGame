@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://oybqravmb4je"]
+
+[node name="Button" type="Button"]
+anchors_preset = -1
+anchor_left = 0.008
+anchor_right = 0.008
+offset_left = -9.216
+offset_right = -1.216
+offset_bottom = 8.0
+text = "fadsf"
