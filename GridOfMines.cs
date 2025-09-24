@@ -35,7 +35,7 @@ public partial class GridOfMines : GridContainer
     
     public void GameStart()
     {
-        _minesDict = _getMinesPositions();
+        _minesDict = GetMinesPositions();
         for (var w = 0; w < Height; w++)
         {
             for (var h = 0; h < Width; h++)
@@ -63,7 +63,7 @@ public partial class GridOfMines : GridContainer
 
     #region PreGameInit
 
-    private Dictionary<int,HashSet<int>> _getMinesPositions()
+    private Dictionary<int,HashSet<int>> GetMinesPositions()
     {
         var dict = new Dictionary<int, HashSet<int>>();
         var rand = new Random();
@@ -161,7 +161,7 @@ public partial class GridOfMines : GridContainer
         _minesDict.ContainsKey(x)
         && _minesDict[x].Contains(y);
 
-    private bool IsOutOfGrid(int v, int m) =>
+    private static bool IsOutOfGrid(int v, int m) =>
         v < 0 || v >= m;
     #endregion
 }

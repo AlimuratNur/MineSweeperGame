@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|c:\\users\\fps shop\\desktop\\minesweeper\\mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|solutionrelative:mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|c:\\users\\fps shop\\desktop\\minesweeper\\gridofmines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|solutionrelative:gridofmines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|c:\\users\\fps shop\\desktop\\minesweeper\\square.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|solutionrelative:square.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,44 +34,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainScene.cs",
-              "DocumentMoniker": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\MainScene.cs",
-              "RelativeDocumentMoniker": "MainScene.cs",
-              "ToolTip": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\MainScene.cs",
-              "RelativeToolTip": "MainScene.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T06:12:09.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GridOfMines.cs",
-              "DocumentMoniker": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\GridOfMines.cs",
-              "RelativeDocumentMoniker": "GridOfMines.cs",
-              "ToolTip": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\GridOfMines.cs",
-              "RelativeToolTip": "GridOfMines.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T16:48:58.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Square.cs",
-              "DocumentMoniker": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\Square.cs",
-              "RelativeDocumentMoniker": "Square.cs",
-              "ToolTip": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\Square.cs",
-              "RelativeToolTip": "Square.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvzAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T17:35:11.127Z"
             }
           ]
         }

@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|c:\\users\\fps shop\\desktop\\minesweeper\\gridofmines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|solutionrelative:gridofmines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|c:\\users\\fps shop\\desktop\\minesweeper\\square.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74248677-8FD1-4F43-876C-B0B8F4316DDA}|MineSweeper.csproj|solutionrelative:square.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,9 +52,9 @@
               "RelativeDocumentMoniker": "MainScene.cs",
               "ToolTip": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\MainScene.cs",
               "RelativeToolTip": "MainScene.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T06:12:09.41Z",
+              "WhenOpened": "2025-09-24T16:07:46.406Z",
               "EditorCaption": ""
             },
             {
@@ -69,21 +65,10 @@
               "RelativeDocumentMoniker": "GridOfMines.cs",
               "ToolTip": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\GridOfMines.cs",
               "RelativeToolTip": "GridOfMines.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAA4wEoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T16:48:58.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Square.cs",
-              "DocumentMoniker": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\Square.cs",
-              "RelativeDocumentMoniker": "Square.cs",
-              "ToolTip": "C:\\Users\\FPS SHOP\\Desktop\\MineSweeper\\Square.cs",
-              "RelativeToolTip": "Square.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvzAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T17:35:11.127Z"
+              "WhenOpened": "2025-09-24T16:07:45.441Z",
+              "EditorCaption": ""
             }
           ]
         }
