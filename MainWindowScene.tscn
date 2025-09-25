@@ -1,28 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://bskf1456g8y56"]
+[gd_scene load_steps=3 format=3 uid="uid://bskf1456g8y56"]
 
 [ext_resource type="PackedScene" uid="uid://dckff4lhg8n08" path="res://MainScene.tscn" id="1_3xgvm"]
+[ext_resource type="Script" uid="uid://dhp58ky4cyk0v" path="res://MainWindowScene.cs" id="1_h6i5j"]
 
 [node name="MainWindowScene" type="Node2D"]
+script = ExtResource("1_h6i5j")
 
 [node name="Square" parent="." instance=ExtResource("1_3xgvm")]
 
 [node name="GetChosedDifficult" type="Window" parent="."]
+position = Vector2i(0, 36)
 size = Vector2i(120, 120)
 
-[node name="Button" type="Button" parent="GetChosedDifficult"]
+[node name="EasyButton" type="Button" parent="GetChosedDifficult"]
 offset_left = 20.0
 offset_right = 102.0
 offset_bottom = 31.0
 text = "Easy"
 
-[node name="Button2" type="Button" parent="GetChosedDifficult"]
+[node name="MediumButton" type="Button" parent="GetChosedDifficult"]
 offset_left = 19.0
 offset_top = 40.0
 offset_right = 101.0
 offset_bottom = 71.0
-text = "Meddium"
+text = "Medium"
 
-[node name="Button3" type="Button" parent="GetChosedDifficult"]
+[node name="ExpertButton" type="Button" parent="GetChosedDifficult"]
 offset_left = 19.0
 offset_top = 80.0
 offset_right = 101.0

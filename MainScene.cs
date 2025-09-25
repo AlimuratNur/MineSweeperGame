@@ -25,10 +25,7 @@ public partial class MainScene : Node2D
     public override void _Ready()
     {
         DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
-        
         _grid = GetNode<GridOfMines>("GridOfMines");
-        Init(Difficults.Easy);
-
     }
     
     public void Init(Difficults difficult)
