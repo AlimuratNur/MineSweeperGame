@@ -20,3 +20,13 @@ offset_right = 438.417
 offset_bottom = 136.935
 scale = Vector2(0.7, 0.7)
 icon = ExtResource("4_uxrcv")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TimeLabel" type="Label" parent="Timer"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ShowFlagsCount" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
