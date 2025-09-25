@@ -2,12 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://dckff4lhg8n08" path="res://MainScene.tscn" id="1_3xgvm"]
 
-[node name="Node2D" type="Node2D"]
+[node name="MainWindowScene" type="Node2D"]
 
 [node name="Square" parent="." instance=ExtResource("1_3xgvm")]
 
 [node name="GetChosedDifficult" type="Window" parent="."]
-size = Vector2i(150, 200)
+size = Vector2i(120, 120)
 
 [node name="Button" type="Button" parent="GetChosedDifficult"]
 offset_left = 20.0
