@@ -18,18 +18,18 @@ public partial class MainScene : Node2D
         DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
         
         _grid = GetNode<GridOfMines>("GridOfMines");
-        Init(Difficults.Easy);
+        Init(Difficults.Hard);
 
     }
     
-    public void Init(Difficults difficutlt)
+    public void Init(Difficults difficult)
     {
         var restartButton = GetNode<Button>("RestartButton");
-        restartButton.Position = new Vector2(5*32-restartButton.Size.X/2 + 15, 0);
+        restartButton.Position = new Vector2(5*32-restartButton.Size.X , 0);
         restartButton.ButtonDown += () => RestartGame();
 
         var restartButtonSizeY= (int)restartButton.Size.Y;
-        switch (difficutlt)
+        switch (difficult)
         {
             
             case Difficults.Easy:
@@ -45,12 +45,12 @@ public partial class MainScene : Node2D
                 DisplayServer.WindowSetSize(GetWindowSize(20, 30,restartButtonSizeY));
                 break;
             default:
-                throw new ArgumentOutOfRangeException(nameof(difficutlt), difficutlt, null);
+                throw new ArgumentOutOfRangeException(nameof(difficult), difficult, null);
         }
     }
 
-    private Vector2I GetWindowSize(int width, int height, int buttonsize) 
-        => new Vector2I(width * 32 + 15, height * 32 + buttonsize); 
+    private Vector2I GetWindowSize(int width, int height, int buttonSize) 
+        => new Vector2I(width * 32 + 15, height * 32 + buttonSize); 
 
     private void RestartGame()
     {
