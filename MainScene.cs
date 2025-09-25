@@ -1,5 +1,7 @@
 using Godot;
 using System;
+using System.Collections.Generic;
+
 
 
 public enum Difficults{
@@ -13,23 +15,38 @@ public partial class MainScene : Node2D
     
     private GridOfMines _grid;
 
+    private static Dictionary<Difficults, Tuple<int,int,int>> _DifficultsSettings = new Dictionary<Difficults, Tuple<int, int, int>>
+    {
+        [Difficults.Easy] = Tuple.Create(10, 15, 40),
+        [Difficults.Medium] = Tuple.Create(15, 20, 80),
+        [Difficults.Expert] = Tuple.Create(20,25,100)
+    };
+
     public override void _Ready()
     {
         DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
         
         _grid = GetNode<GridOfMines>("GridOfMines");
-        Init(Difficults.Expert);
+        Init(Difficults.Easy);
 
     }
     
     public void Init(Difficults difficult)
     {
         var restartButton = GetNode<Button>("RestartButton");
-        restartButton.Position = new Vector2(5*32-restartButton.Size.X , 0);
         restartButton.ButtonDown += () => RestartGame();
-
         var restartButtonSizeY= (int)restartButton.Size.Y;
-        switch (difficult)
+
+        var width = _DifficultsSettings[difficult].Item1;
+        var height = _DifficultsSettings[difficult].Item2;
+        var mineCount = _DifficultsSettings[difficult].Item3;
+        
+        restartButton.Position = new Vector2(width*16-restartButton.Size.X/2 , 0);
+
+        _grid.Init(width, height, mineCount);
+        DisplayServer.WindowSetSize(GetWindowSize(width, height, restartButtonSizeY));
+
+        /*switch (difficult)
         {
             
             case Difficults.Easy:
@@ -46,11 +63,11 @@ public partial class MainScene : Node2D
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(difficult), difficult, null);
-        }
+        }*/
     }
 
     private Vector2I GetWindowSize(int width, int height, int buttonSize) 
-        => new Vector2I(width * 32 + 15, height * 32 + buttonSize); 
+        => new (width * 32 + 23, height * 32 + buttonSize); 
 
     private void RestartGame()
     {
