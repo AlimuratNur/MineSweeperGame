@@ -11,11 +11,13 @@ config_version=5
 [application]
 
 config/name="MineSweeper"
+run/main_scene="uid://bskf1456g8y56"
 config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=648
 window/size/mode=1
 
 [dotnet]
