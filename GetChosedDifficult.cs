@@ -5,9 +5,7 @@ public partial class GetChosedDifficult : Window
 {
     [Signal]
     public delegate void SetDiffEventHandler(int diff);
-   
-
-
+    
     public override void _Ready()
     {
         GetNode<Button>("EasyButton").ButtonDown += () => _DiffcultsButtonDown(0);
@@ -17,9 +15,6 @@ public partial class GetChosedDifficult : Window
 
     private void _DiffcultsButtonDown(int diff)
     {
-        
             EmitSignalSetDiff(diff);
-        
-        
     }
 }

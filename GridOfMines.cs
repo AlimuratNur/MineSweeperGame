@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public partial class GridOfMines : GridContainer
 {
+    [Signal]
+    public delegate void GameIsWonEventHandler();
+
     [Export] 
     private PackedScene _squareScene = GD.Load<PackedScene>("res://square.tscn");
     
@@ -153,7 +156,7 @@ public partial class GridOfMines : GridContainer
     private void GameWon()
     {
         howMuchLeft--;
-        if (howMuchLeft == 0) GD.Print("You won");
+        if (howMuchLeft == 0) EmitSignalGameIsWon();
     }
 
     #region HelperMethods

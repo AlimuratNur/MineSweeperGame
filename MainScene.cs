@@ -26,14 +26,17 @@ public partial class MainScene : Node2D
     {
         DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
         _grid = GetNode<GridOfMines>("GridOfMines");
+        
     }
     
     public void Init(Difficults difficult)
     {
-        
+       
         var restartButton = GetNode<Button>("RestartButton");
         restartButton.ButtonDown += () => RestartGame();
         var restartButtonSizeY= (int)restartButton.Size.Y;
+        _grid.GameIsWon += () => 
+            GetNode<Label>("ShowFlagsCount").Text = "You won";
 
         var width = _DifficultsSettings[difficult].Item1;
         var height = _DifficultsSettings[difficult].Item2;
