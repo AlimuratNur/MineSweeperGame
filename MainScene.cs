@@ -17,9 +17,9 @@ public partial class MainScene : Node2D
 
     private static Dictionary<Difficults, Tuple<int,int,int>> _DifficultsSettings = new Dictionary<Difficults, Tuple<int, int, int>>
     {
-        [Difficults.Easy] = Tuple.Create(10, 15, 40),
-        [Difficults.Medium] = Tuple.Create(15, 20, 80),
-        [Difficults.Expert] = Tuple.Create(20,25,100)
+        [Difficults.Easy] = Tuple.Create(8, 9, 10),
+        [Difficults.Medium] = Tuple.Create(10, 15, 40),
+        [Difficults.Expert] = Tuple.Create(15,20,80)
     };
 
     public override void _Ready()
