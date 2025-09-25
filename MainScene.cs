@@ -12,7 +12,7 @@ public enum Difficults{
 
 public partial class MainScene : Node2D
 {
-    
+    private bool isfirstgame = true;
     private GridOfMines _grid;
 
     private static Dictionary<Difficults, Tuple<int,int,int>> _DifficultsSettings = new Dictionary<Difficults, Tuple<int, int, int>>
@@ -30,6 +30,7 @@ public partial class MainScene : Node2D
     
     public void Init(Difficults difficult)
     {
+        
         var restartButton = GetNode<Button>("RestartButton");
         restartButton.ButtonDown += () => RestartGame();
         var restartButtonSizeY= (int)restartButton.Size.Y;

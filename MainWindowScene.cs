@@ -10,13 +10,21 @@ public partial class MainWindowScene : Node2D
     public override void _Ready()
     {
         Playground = GetNode<MainScene>("Square");
-        GetNode<Button>("GetNode").ButtonDown += () => _DiffcultsButtonDown(0);
-        GetNode<Button>("MediumButton").ButtonDown += () => _DiffcultsButtonDown(1);
-        GetNode<Button>("ExpertButton").ButtonDown += () => _DiffcultsButtonDown(2);
+        var choseDiffWindow = GetNode<GetChosedDifficult>("GetChosedDifficult");
+        choseDiffWindow.SetDiff += x => _DiffcultsButtonDown(x);
     }
 
     private void _DiffcultsButtonDown(int diff)
     {
         Playground.Init((Difficults)diff);
+        GetNode<GetChosedDifficult>("GetChosedDifficult").Hide();
+    }
+
+    public override void _Input(InputEvent @event)
+    {
+        if (Input.IsKeyPressed(Key.H))
+        {
+            GetNode<GetChosedDifficult>("GetChosedDifficult").Show();
+        }
     }
 }

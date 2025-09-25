@@ -4,11 +4,8 @@ using Godot;
 public partial class GetChosedDifficult : Window
 {
     [Signal]
-    public delegate void SetEasyDiffEventHandler();
-    [Signal]
-    public delegate void MediumDiffEventHandler();
-    [Signal]
-    public delegate void ExtremeDiffEventHandler();
+    public delegate void SetDiffEventHandler(int diff);
+   
 
 
     public override void _Ready()
@@ -20,13 +17,9 @@ public partial class GetChosedDifficult : Window
 
     private void _DiffcultsButtonDown(int diff)
     {
-        if(diff ==0)
-            EmitSignalSetEasyDiff();
-        else if(diff == 1)
-            EmitSignalMediumDiff();
-        else
-            EmitSignalExtremeDiff();
-            
+        
+            EmitSignalSetDiff(diff);
+        
         
     }
 }
