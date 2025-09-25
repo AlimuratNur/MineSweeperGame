@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmrww1q57jj0t"]
+
+[ext_resource type="Script" uid="uid://bwor6ssdp48u7" path="res://GetChosedDifficult.cs" id="1_xtfbj"]
+
+[node name="GetChosedDifficult" type="Window"]
+auto_translate_mode = 1
+position = Vector2i(0, 36)
+size = Vector2i(120, 120)
+script = ExtResource("1_xtfbj")
+
+[node name="EasyButton" type="Button" parent="."]
+offset_left = 20.0
+offset_right = 102.0
+offset_bottom = 31.0
+text = "Easy"
+
+[node name="MediumButton" type="Button" parent="."]
+offset_left = 19.0
+offset_top = 40.0
+offset_right = 101.0
+offset_bottom = 71.0
+text = "Medium"
+
+[node name="ExpertButton" type="Button" parent="."]
+offset_left = 19.0
+offset_top = 80.0
+offset_right = 101.0
+offset_bottom = 111.0
+text = "Expert"
