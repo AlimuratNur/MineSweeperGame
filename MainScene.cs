@@ -5,7 +5,7 @@ using System;
 public enum Difficults{
     Easy,
     Medium,
-    Hard
+    Expert
     }
 
 public partial class MainScene : Node2D
@@ -18,7 +18,7 @@ public partial class MainScene : Node2D
         DisplayServer.WindowSetMode(DisplayServer.WindowMode.Windowed);
         
         _grid = GetNode<GridOfMines>("GridOfMines");
-        Init(Difficults.Hard);
+        Init(Difficults.Expert);
 
     }
     
@@ -40,9 +40,9 @@ public partial class MainScene : Node2D
                 _grid.Init(15, 20, 80);
                 DisplayServer.WindowSetSize(GetWindowSize(15 ,20, restartButtonSizeY));
                 break;
-            case Difficults.Hard:
-                _grid.Init(20, 30, 120);
-                DisplayServer.WindowSetSize(GetWindowSize(20, 30,restartButtonSizeY));
+            case Difficults.Expert:
+                _grid.Init(20, 25, 100);
+                DisplayServer.WindowSetSize(GetWindowSize(20, 25,restartButtonSizeY));
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(difficult), difficult, null);
