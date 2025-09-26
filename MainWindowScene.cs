@@ -10,6 +10,7 @@ public partial class MainWindowScene : Node2D
     public override void _Ready()
     {
         Playground = GetNode<MainScene>("Square");
+        Playground.Hide();
         var choseDiffWindow = GetNode<GetChosedDifficult>("GetChosedDifficult");
         choseDiffWindow.SetDiff += x => _DiffcultsButtonDown(x);
     }
@@ -17,6 +18,7 @@ public partial class MainWindowScene : Node2D
     private void _DiffcultsButtonDown(int diff)
     {
         Playground.Init((Difficults)diff);
+        Playground.Show();
         GetNode<GetChosedDifficult>("GetChosedDifficult").Hide();
     }
 

@@ -31,7 +31,7 @@ public partial class MainScene : Node2D
     
     public void Init(Difficults difficult)
     {
-       
+        
         var restartButton = GetNode<Button>("RestartButton");
         restartButton.ButtonDown += () => RestartGame();
         var restartButtonSizeY= (int)restartButton.Size.Y;
@@ -74,5 +74,11 @@ public partial class MainScene : Node2D
     {
         GetTree().ReloadCurrentScene();
         
+    }
+
+    private void RestartGame(int a)
+    {
+        GetTree().ReloadCurrentScene();
+
     }
 }
