@@ -45,7 +45,7 @@ public partial class MainScene : Node2D
         restartButton.Position = new Vector2(width*16-restartButton.Size.X/2 , 0);
 
         _grid.Init(width, height, mineCount);
-        DisplayServer.WindowSetSize(GetWindowSize(width, height, restartButtonSizeY));
+        DisplayServer.WindowSetSize(GetWindowSize((int)_grid.Width, (int)_grid.Height, restartButtonSizeY));
 
         /*switch (difficult)
         {
@@ -68,7 +68,7 @@ public partial class MainScene : Node2D
     }
 
     private Vector2I GetWindowSize(int width, int height, int buttonSize) 
-        => new (width * 32 + 23, height * 32 + buttonSize); 
+        => new ((int)(width * 32 * 0.8), (int)(height * 32 * 0.8) + buttonSize / 2 + 9); 
 
     private void RestartGame()
     {

@@ -9,8 +9,9 @@ scale = Vector2(1.04822, 1.06904)
 script = ExtResource("1_x4av3")
 
 [node name="GridOfMines" parent="." instance=ExtResource("1_3mqji")]
+offset_left = -1.908
 offset_top = 69.221
-offset_right = 1000.0
+offset_right = 998.092
 offset_bottom = 669.221
 
 [node name="RestartButton" type="Button" parent="."]

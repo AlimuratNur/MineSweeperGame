@@ -3,9 +3,12 @@
 [ext_resource type="Script" uid="uid://osoxct5dbtr3" path="res://GridOfMines.cs" id="1_rxlgd"]
 
 [node name="GridOfMines" type="GridContainer"]
-offset_right = 70.0
-offset_bottom = 54.0
+offset_right = 35.0
+offset_bottom = 38.0
+scale = Vector2(0.8, 0.8)
 pivot_offset = Vector2(10, 0)
+size_flags_horizontal = 4
+size_flags_vertical = 4
 size_flags_stretch_ratio = 11.11
 localize_numeral_system = false
 theme_override_constants/h_separation = 0

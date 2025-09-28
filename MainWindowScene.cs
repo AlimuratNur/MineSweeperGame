@@ -13,6 +13,7 @@ public partial class MainWindowScene : Node2D
         Playground.Hide();
         var choseDiffWindow = GetNode<GetChosedDifficult>("GetChosedDifficult");
         choseDiffWindow.SetDiff += x => _DiffcultsButtonDown(x);
+        
     }
 
     private void _DiffcultsButtonDown(int diff)
