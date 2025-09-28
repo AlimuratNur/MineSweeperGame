@@ -64,6 +64,11 @@ public partial class GridOfMines : GridContainer
         }
     }
 
+    public void RestartGame()
+    {
+        
+    }
+
     #region PreGameInit
 
     private Dictionary<int,HashSet<int>> GetMinesPositions()
@@ -158,6 +163,8 @@ public partial class GridOfMines : GridContainer
         howMuchLeft--;
         if (howMuchLeft == 0) EmitSignalGameIsWon();
     }
+
+
 
     #region HelperMethods
     private bool IsSquareIsMine(int x, int y) => 
