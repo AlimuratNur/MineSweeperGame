@@ -1,7 +1,11 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
-.vs
+/.vs
 *.uid
 *.exe
 *.db
+*.bin
+*.suo
+*.v2
+
