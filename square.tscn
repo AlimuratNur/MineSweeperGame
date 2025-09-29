@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b5oy62xnxlvrh"]
 
-[ext_resource type="Script" uid="uid://ck2y72uyro7cv" path="res://Square.cs" id="1_5epwn"]
+[ext_resource type="Script" uid="uid://cqvwryekx52k2" path="res://Square.cs" id="1_5epwn"]
 [ext_resource type="Texture2D" uid="uid://cmlemgebs3xtd" path="res://Assets/Minesweeper-pack/single-files/minesweeper_00.png" id="2_5epwn"]
 
 [node name="Square" type="Button"]

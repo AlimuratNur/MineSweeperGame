@@ -66,7 +66,7 @@ public partial class GridOfMines : GridContainer
 
     public void RestartGame()
     {
-        
+        GetTree().ReloadCurrentScene();
     }
 
     #region PreGameInit

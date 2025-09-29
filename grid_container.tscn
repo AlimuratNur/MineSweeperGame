@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cji11wmcgqqj0"]
 
-[ext_resource type="Script" uid="uid://osoxct5dbtr3" path="res://GridOfMines.cs" id="1_rxlgd"]
+[ext_resource type="Script" uid="uid://kpy3vq6p8373" path="res://GridOfMines.cs" id="1_rxlgd"]
 
 [node name="GridOfMines" type="GridContainer"]
 offset_right = 35.0

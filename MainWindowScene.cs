@@ -12,8 +12,10 @@ public partial class MainWindowScene : Node2D
     {
         Playground = GetNode<MainScene>("Square");
         Playground.Hide();
+
         var choseDiffWindow = GetNode<GetChosedDifficult>("GetChosedDifficult");
         choseDiffWindow.SetDiff += x => _DiffcultsButtonDown(x);
+
         var window = GetNode<GetChosedDifficult>("GetChosedDifficult");
         window.CloseRequested += () => this.Hide();
 
