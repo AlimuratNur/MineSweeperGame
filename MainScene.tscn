@@ -25,9 +25,13 @@ icon = ExtResource("3_rpqi1")
 [node name="Timer" type="Timer" parent="."]
 
 [node name="TimeLabel" type="Label" parent="Timer"]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 57.0
+offset_top = 14.0
+offset_right = 193.0
+offset_bottom = 82.0
+scale = Vector2(0.5, 0.5)
 
 [node name="ShowFlagsCount" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 136.0
+offset_bottom = 68.0
+scale = Vector2(0.5, 0.5)

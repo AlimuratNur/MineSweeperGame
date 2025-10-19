@@ -10,16 +10,18 @@ public enum Difficults{
 
 public partial class MainScene : Node2D
 {
-    public bool IsFirstGame { get; private set; } = true;
-    private GridOfMines _grid;
-
-
-    private static Dictionary<Difficults, Tuple<int, int, int>> _DifficultsSettings = new Dictionary<Difficults, Tuple<int, int, int>>
+    private static Dictionary<Difficults, Tuple<int, int, int>> _DifficultsSettings 
+        = new Dictionary<Difficults, Tuple<int, int, int>>
     {
         [Difficults.Easy] = Tuple.Create(8, 9, 10),
         [Difficults.Medium] = Tuple.Create(10, 15, 40),
         [Difficults.Expert] = Tuple.Create(15, 20, 80)
     };
+
+    public bool IsFirstGame { get; private set; } = true;
+    private GridOfMines _grid;
+
+    
 
 
     public void Init(Difficults difficult)
@@ -35,6 +37,7 @@ public partial class MainScene : Node2D
         var restartButton = GetNode<Button>("RestartButton");
         restartButton.ButtonDown += () => RestartGame();
         var restartButtonSizeY = (int)restartButton.Size.Y;
+
         restartButton.Position =
                 new Vector2(width * 16 - restartButton.Size.X / 2, 0);
 
@@ -44,7 +47,7 @@ public partial class MainScene : Node2D
             GetNode<Label>("ShowFlagsCount").Text = "You won";
 
 
-        WindowSet.SetSize(width,height, restartButtonSizeY);
+        WindowSet.SetSize(width, height, restartButtonSizeY);
     }
 
     public void RestartGame()
