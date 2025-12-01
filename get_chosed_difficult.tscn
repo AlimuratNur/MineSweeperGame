@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dmrww1q57jj0t"]
 
-[ext_resource type="Script" uid="uid://bwor6ssdp48u7" path="res://GetChosedDifficult.cs" id="1_xtfbj"]
+[ext_resource type="Script" uid="uid://bvwsyptjloblu" path="res://Scripts/GetChosedDifficult.cs" id="1_xtfbj"]
 
 [node name="GetChosedDifficult" type="Window"]
 auto_translate_mode = 1

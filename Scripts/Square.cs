@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Godot;
 
 public partial class Square : Button
@@ -15,17 +14,17 @@ public partial class Square : Button
   
     public bool _flagged { get; private set; } = false;
     public int _mineCount { get; private set; }
-    private bool _isMine ;
+    private bool _isMine;
     
     private Sprite2D _sprite;
 
     
     public void Init(bool isMine, int mineCount, int x, int y)
     {
-        _isMine = isMine;
         _mineCount = mineCount;
         XData = x;
         YData = y;
+        _isMine = isMine;
     }
 
     public override void _Ready()
@@ -39,6 +38,7 @@ public partial class Square : Button
         
         if (_flagged 
             || Disabled) return;
+
         Disabled = true;
         if (_isMine)
         {

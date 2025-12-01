@@ -47,15 +47,19 @@ public partial class GridOfMines : GridContainer
                 var mineCount = GetMinesCount(w, h, _minesDict);
                 int x = w;
                 int y = h;
+
                 _gridSquares[x, y] = (Square)_squareScene.Instantiate();
+
                 if (IsSquareIsMine(x,y))
                 {
                     isMine = true;
                     _gridSquares[x,y].GameOver += () => GameOver();
                 }
+
+                _gridSquares[x, y].Init(isMine,mineCount, x, y);
                 AddChild(_gridSquares[x, y]);
                 _gridSquares[x, y].ButtonDowned += () => GameWon();
-                _gridSquares[x, y].Init(isMine,mineCount, x, y);
+                
                 
                 if(mineCount == 0)
                     _gridSquares[x,y].OpenAllEmptySquares += () => OpenAllEmptySquares(x, y);
