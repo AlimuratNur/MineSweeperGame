@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
-public enum Difficults{
+public enum Difficults : byte{
     Easy,
     Medium,
     Expert

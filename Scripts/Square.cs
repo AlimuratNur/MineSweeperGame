@@ -8,15 +8,19 @@ public partial class Square : Button
     public delegate void GameOverEventHandler();
     [Signal]
     public delegate void ButtonDownedEventHandler();
+    
+    
+    private Sprite2D _sprite;
 
     public int XData { get; private set; }
     public int YData { get; private set; }
   
     public bool _flagged { get; private set; } = false;
     public int _mineCount { get; private set; }
+    
     private bool _isMine;
     
-    private Sprite2D _sprite;
+    
 
     
     public void Init(bool isMine, int mineCount, int x, int y)

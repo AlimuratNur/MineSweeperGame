@@ -38,21 +38,24 @@ public partial class GridOfMines : GridContainer
     
     public void GameStart()
     {
+
+        _squareScene = GD.Load<PackedScene>("res://square.tscn");
+        GD.Print(_squareScene is null);
         _minesDict = GetMinesPositions();
         for (var w = 0; w < Height; w++)
         {
             for (var h = 0; h < Width; h++)
             {
-                var isMine = false;
+                
                 var mineCount = GetMinesCount(w, h, _minesDict);
                 int x = w;
                 int y = h;
-
+                var isMine = IsSquareIsMine(x, y);
+                
                 _gridSquares[x, y] = (Square)_squareScene.Instantiate();
 
-                if (IsSquareIsMine(x,y))
+                if (isMine)
                 {
-                    isMine = true;
                     _gridSquares[x,y].GameOver += () => GameOver();
                 }
 
